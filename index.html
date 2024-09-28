@@ -20,8 +20,10 @@
      <!-- Utilizamos form en label y id en input  para vincular los elemento -->
      <!--el atributo minlength se utiliza para validar el numero de caracteres de la contrasenia-->
      <!--El atributo pattern se utiliza para definir una expresion regular que la contrasenia debe coincidir para ser considerada valida [a-z0-5]}{8,}-->
-    </fieldset>
+    </fieldset> 
+
     <fieldset> <!--S.24. Esta seccion pedira el tipo de cuenta  que el usurio esta creando, los usuarios podran elegir entre Personal o Business-->
+
         <legend>Account type (required)</legend>
         <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked>Personal</label> <!-- el name account type es para que el usuario pueda elegir uno solo y no los dos -->
         <label for="business-account"><input id="business-account" type="radio" name="account-type">Business</label> 
