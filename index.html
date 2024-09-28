@@ -22,10 +22,12 @@
      <!--El atributo pattern se utiliza para definir una expresion regular que la contrasenia debe coincidir para ser considerada valida [a-z0-5]}{8,}-->
     </fieldset>
     <fieldset> <!--S.24. Esta seccion pedira el tipo de cuenta  que el usurio esta creando, los usuarios podran elegir entre Personal o Business-->
-        <label><input type="radio" name="account-type">Personal</label> <!-- el name account type es para que el usuario pueda elegir uno solo y no los dos -->
-        <label><input type="radio" name="account-type">Business</label> 
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked>Personal</label> <!-- el name account type es para que el usuario pueda elegir uno solo y no los dos -->
+        <label for="business-account"><input id="business-account" type="radio" name="account-type">Business</label> 
     </fieldset>
     <fieldset></fieldset>
+    <label for="terms-and-conditions"> <input id="terms-and-conditions" type="checkbox" required>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms-and-conditions</a></label>
     <input type="submit" value="Submit">
 
 </body>
